@@ -1,5 +1,5 @@
 function int(){
-  alert('it works')
+  alert('it works');
   
 var map;
 
@@ -10,6 +10,6 @@ function initMap() {
   });
 }
 
-window.addEventListener('load', init);
+google.maps.event.addDomListenser(window, 'load', init);
 
 , 
