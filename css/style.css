@@ -270,7 +270,11 @@ ul.special_bullet li:before {
   margin: 30px auto;  
   }
   
-
+#map {
+  width: 600px;
+  height: 400px;
+  margin: 30px auto;  
+  
 html, body {
     height: 100%;
     margin: 0;
