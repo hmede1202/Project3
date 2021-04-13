@@ -259,23 +259,18 @@ ul.special_bullet li:before {
   width: 850px;
   height: 600px;
   background-color: rgb(7, 83, 159);  
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
   } 
 
 #canvas {
   width: 700px;
-  height: 500px;
-  background-color: #ccc;  
-  margin: 30px auto;  
+  height: 500px;  
+  margin: 0px auto; 
   }
   
 #map {
-  height: 75%;
-  }
-  
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  width: 700px;
+  height: 500px;
+  margin: 0px auto; 
   }
