@@ -269,3 +269,13 @@ ul.special_bullet li:before {
   background-color: #ccc;  
   margin: 30px auto;  
   }
+  
+#map {    
+  height: 100%;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
