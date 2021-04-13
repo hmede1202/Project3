@@ -266,11 +266,9 @@ ul.special_bullet li:before {
 #canvas {
   width: 700px;
   height: 500px;  
-  margin: 0px auto; 
+  margin: 30px auto; 
   }
   
 #map {
-  width: 700px;
-  height: 500px;
-  margin: 0px auto; 
+  height: 75%;
   }
