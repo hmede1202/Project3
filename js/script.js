@@ -5,7 +5,7 @@ function init(){
   var myLocation = new google.maps.LatLng(48.85853948884557, 2.294497391554784);
   var mapOptions = {
     center: myLocation,
-    zoom: 18,
+    zoom: 15,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     mapTypeControlOptions: {
       position: google.maps.ControlPosition.BOTTOM_CETER
@@ -14,6 +14,22 @@ function init(){
  
   var myMap = new google.maps.Map(el, mapOptions);
 
+  var marker = new google.maps.Marker({
+    position: myLocation,
+    map: myMap,
+    animation: google.maps.Animation.BOUNCE,
+    icon: 'images/demon_slayer.png'  
+  });
+  
+  var contentString = '<h1>EVERYONE!</h1><p>Get vaccinated so we can all travel and enjoy the world again!!!</p>'
+  
+  var infowindow = new google.maps.InfoWindow ({
+    content: contentString
+  });
+  
+  google.maps.event.addListener(marker, 'mouseover', function() {
+    infowindow.open(myMap, marker);
+  });
 }
 
 google.maps.event.addDomListener(window, 'load', init);
