@@ -1,4 +1,4 @@
-function int(){
+function init(){
   alert('it works');
   
   var el = document.getElementById('canvas');
@@ -19,4 +19,3 @@ function int(){
 
 google.maps.event.addDomListener(window, 'load', init);
 
-, 
