@@ -18,7 +18,7 @@ function init(){
     position: myLocation,
     map: myMap,
     animation: google.maps.Animation.BOUNCE,
-    icon: 'images/demon_slayer.png'  
+    icon: 'images/eiffel tower.png'  
   });
   
   var contentString = '<h1>EVERYONE!</h1><p>Get vaccinated NOW, so we can all travel and enjoy the world again!!!</p>'
