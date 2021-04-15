@@ -32,6 +32,10 @@ function init(){
     infowindow.open(myMap, marker);
   });
   
+  $(document).ready(function(){
+  $('.bxslider').bxSlider();
+  });
+  
 }  
 google.maps.event.addDomListener(window, 'load', init);
 
