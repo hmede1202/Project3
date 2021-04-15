@@ -1,5 +1,5 @@
 function init(){
-  alert('it works');
+  alert('It Works!');
   
   var el = document.getElementById('canvas');
   var myLocation = new google.maps.LatLng(48.85853948884557, 2.294497391554784);
@@ -17,9 +17,10 @@ function init(){
   var marker = new google.maps.Marker({
     position: myLocation,
     map: myMap,
-    animation: google.maps.Animation.BOUNCE,
+    animation: google.maps.Animation.DROP,
     icon: 'images/eiffel tower.png'  
   });
+  
   
   var contentString = '<h1>EVERYONE!</h1><p>Get vaccinated NOW, so we can all travel and enjoy the world again!!!</p>'
   
@@ -27,10 +28,10 @@ function init(){
     content: contentString
   });
   
-  google.maps.event.addListener(marker, 'mousemove', function() {
+  google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(myMap, marker);
   });
-}
-
+  
+}  
 google.maps.event.addDomListener(window, 'load', init);
 

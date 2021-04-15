@@ -272,3 +272,12 @@ ul.special_bullet li:before {
 #map {
   height: 75%;
   }
+  
+.slideshow {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+
+.slideshow ul {
+  margin: 0;
+  }
