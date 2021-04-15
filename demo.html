@@ -2,32 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-<head>
-
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
+  <script src="js/script.js"></script>
   <script>
     $(document).ready(function(){
-      $('.slider').bxSlider();
+      $('.wrapper_bx').bxSlider();
     });
   </script>
-
 </head>
 <body>
+  <ul class="wrapper_bx">
+    <li class="slides"><img src="images/Bangkok_Temple.jpg" title="Bangkok" /></li>
+      <h2>Bangkok</h2>
+    <li  class="slides"><img src="images/Eiffel_Tower.jpg" title="Paris in the Springtime" /></li>
+      <h2>Paris in the Springtime</h2>
+    <li class="slides"><img src="images/Great Pyramids.jpg" title="Great Pyramids of Egypt" /></li>
+      <h2>Great Pyramids of Egypt</h2>
+    <li class="slides">><img src="images/Sydney_Australia.jpg" title="Sydney Opera House" /></li>
+      <h2>Sydney Opera House</h2>    
+    <li class="slides">><img src="images/Taj_Mahal.jpg" title="The Taj Mahal" /></li>
+      <h2>The Taj Mahal</h2>    
+    <li class="slides">><img src="images/London_Bridge.jpg" title= "London Bridge"  /></li>
+      <h2>London Bridge</h2>    
+    <li class="slides">><img src="images/Great_Wall.jpg" title= "Always Going on An Adventure... When there's no pandemic'"  /></li>
+      <h2>Always Going on An Adventure... When there's no pandemic</h2>     
+  </ul> 
+  <div>
+    <script>
+      var slSlider = $('.slides').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
 
-  <div class="slider">
-    <div><img src="images/anime_logo.png" title="ANIME" /></div>
-    <div><img src="images/akihabara_crossing.png" title="Akihabara Crossing in Japan" /></div>
-    <div><img src="images/anime_expo.png" title="Anime Expo" /></div>
-    <div><img src="images/attack_on_titan.png" title="Attack on Titan" /></div>
-    <div><img src="images/attack_on_titan2.png"  /></div>
-    <div><img src="images/demon_slayer.png" title= "Demon Slayer"  /></div>
-    <div><img src="images/my_hero_academia.png" title= "My Hero Academia"  /></div>
-    <div><img src="images/nyc_comic_con.png" title= "NYC Comic Con"  /></div> 
-  </div> 
+      });
+    </script>  
   </div>
-
 </body>
 </html>

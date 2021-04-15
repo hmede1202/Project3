@@ -272,7 +272,7 @@ ul.special_bullet li:before {
   } 
   
 .wrapper_bx {
-  width 300px
+  width 1000px
   margin: 40px auto;
   }
 
@@ -282,15 +282,33 @@ ul.special_bullet li:before {
   border: none;
   }
 
-.slider {
-  width: 400px;
-  height: 400px;
-  float: right;
-  border-radius: 50%;
-  margin: 50px; 
+  
+.slides {
+  width: 500px;
+  margin: 40px auto; 
   text-align: center;
   }
+  
+.slides li{
+  height: 100vh;
+  text-align: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  }
 
+.wrapper_bx li h2{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-family: Audiowide;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
 #canvas {
   width: 700px;
   height: 500px;  
