@@ -73,11 +73,13 @@ nav#horz1 ul li a:hover {
 
 #header {
   font-size: 3em;
+  font-weight:bold;
   }
   
 .pinfo {
   color: rgb(7, 83, 159);
   font-size: 2em;
+  font-weight:bold;
   }
   
 .info ul {
@@ -185,16 +187,21 @@ ul.special_bullet li:before {
   }  
 
 .circle.circle1 {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   float: left;
   border-radius: 50%;
   margin: 50px;
+  left: 10px;
   }
-  
+
+.bold_text {
+    font-weight:bold;
+}
+
 .circle.circle2 {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   float: right;
   border-radius: 50%;
   margin: 50px; 
