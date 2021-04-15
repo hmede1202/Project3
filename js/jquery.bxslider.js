@@ -1,7 +1,3 @@
-$(document).ready(function(){
-  $('.slider').bxSlider();
-});
-
 /**
  * bxSlider v4.2.12
  * Copyright 2013-2015 Steven Wanderski

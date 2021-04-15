@@ -263,13 +263,30 @@ ul.special_bullet li:before {
   text-align: center;
   }
 
-#wrapper {
+.wrapper {
   width: 850px;
   height: 600px;
   background-color: rgb(7, 83, 159);  
   margin: 0px auto;
   overflow: hidden;
   } 
+  
+.wrapper_bx {
+  width 300px
+  margin: 40px auto;
+  }
+
+.bx-wrapper {
+  left: 0;
+  box-shadow: none;
+  border: none;
+  }
+
+.slider {
+  height: 20vh;
+  -webkit-background-size: cover;
+  background-size: cover; 
+  background-position: center center;
 
 #canvas {
   width: 700px;

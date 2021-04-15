@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css">  
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="/lib/jquery.bxslider.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bxslider.js"></script>
-    <script src="/js/jquery.bxslider.min.js"></script>
+    <link  rel="stylesheet" href="css/jquery.bxslider.css">  
     <script type="text/javascript"></script>
     <script async src="js/script.js"></script>
     <script src="js/vendor/jquery.js"></script>
@@ -42,7 +39,8 @@
       <img src="images/anime_logo.png" alt="anime">
     </div>  
   </header>
-    <ul class="bxslider">
+  <div class="bx-wrapper ">
+    <ul class="slider">
       <li><img src="/images/anime_logo.png"  /></li>
       <li><img src="/images/akihabara_crossing.png"  /></li>
       <li><img src="/images/anime_expo.png"  /></li>
@@ -52,6 +50,7 @@
       <li><img src="/my_hero_academia.png"  /></li>
       <li><img src="/images/nyc_comic_con.png"  /></li>  
     </ul>       
+  </div>
   <div class="travel_food">
     <h2 class="bold_text">HUNTER MEDE'S ANIME OBSESSION</h2>
   </div>
@@ -104,5 +103,15 @@
         </div>
       </div>
     </section>  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+      var slSlider = $('#slider-area').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
+          }
+      })
+    </script>
   </body>
 </html>
