@@ -4,5 +4,7 @@ $(function(){
     captions: true,
     slideWidth: 600
   });
+  
+$(document).ready(function(){
 });
 

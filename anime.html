@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css">  
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link href="/lib/jquery.bxslider.css" rel="stylesheet">
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <script src="/js/bx_slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript"></script>
     <script async src="js/script.js"></script>
     <script src="js/vendor/jquery.js"></script>
@@ -46,17 +47,16 @@
       <img src="images/anime_logo.png" alt="anime">
     </div>  
   </header>
-  <div class="bxslider">
-    <div><img src="images/anime_logo.png" title=ANIME></div>
-    <div><img src="images/akihabara_crossing.png" title="Akihabara Crossing in Japan"></div>
-    <div><img src="images/anime_expo.png" title="Anime Expo"></div>
-    <div><img src="images/attack_on_titan.png" title="Attack on Titan" /></li>
-    <div><img src="images/attack_on_titan2.png"  /></li>
-    <div><img src="images/demon_slayer.png title= Demon Slayer"  /></li>
-    <div><img src="images/my_hero_academia.png title= My Hero Academia"  /></li>
-    <div><img src="images/nyc_comic_con.png title= NYC Comic Con"  /></li>  
-    </ul>       
-  </div>
+  <div class="slider">
+    <div><img src="images/anime_logo.png" title="ANIME" /></div>
+    <div><img src="images/akihabara_crossing.png" title="Akihabara Crossing in Japan" /></div>
+    <div><img src="images/anime_expo.png" title="Anime Expo" /></div>
+    <div><img src="images/attack_on_titan.png" title="Attack on Titan" /></div>
+    <div><img src="images/attack_on_titan2.png"  /></div>
+    <div><img src="images/demon_slayer.png" title= "Demon Slayer"  /></div>
+    <div><img src="images/my_hero_academia.png" title= "My Hero Academia"  /></div>
+    <div><img src="images/nyc_comic_con.png" title= "NYC Comic Con"  /></div> 
+  </div>       
   <div class="travel_food">
     <h2 class="bold_text">HUNTER MEDE'S ANIME OBSESSION</h2>
   </div>
@@ -108,6 +108,12 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/jiJu4K2jems" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </section>  
+    </section> 
+    <div>
+      $(document).ready(function(){
+        $('.bxslider').bxSlider();
+       }); 
+    </div>
   </body>
 </html>
+

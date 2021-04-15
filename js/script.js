@@ -69,5 +69,6 @@ startSlider();
   
 });
 
+}
 google.maps.event.addDomListener(window, 'load', init);
 

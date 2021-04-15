@@ -283,10 +283,13 @@ ul.special_bullet li:before {
   }
 
 .slider {
-  height: 20vh;
-  -webkit-background-size: cover;
-  background-size: cover; 
-  background-position: center center;
+  width: 400px;
+  height: 400px;
+  float: right;
+  border-radius: 50%;
+  margin: 50px; 
+  text-align: center;
+  }
 
 #canvas {
   width: 700px;
@@ -298,11 +301,4 @@ ul.special_bullet li:before {
   height: 75%;
   }
   
-.slideshow {
-  max-width: 600px;
-  margin: 0 auto;
-  }
 
-.slideshow ul {
-  margin: 0;
-  }
