@@ -21,13 +21,13 @@ function init(){
     icon: 'images/demon_slayer.png'  
   });
   
-  var contentString = '<h1>EVERYONE!</h1><p>Get vaccinated so we can all travel and enjoy the world again!!!</p>'
+  var contentString = '<h1>EVERYONE!</h1><p>Get vaccinated NOW, so we can all travel and enjoy the world again!!!</p>'
   
   var infowindow = new google.maps.InfoWindow ({
     content: contentString
   });
   
-  google.maps.event.addListener(marker, 'mouseover', function() {
+  google.maps.event.addListener(marker, 'mousemove', function() {
     infowindow.open(myMap, marker);
   });
 }
