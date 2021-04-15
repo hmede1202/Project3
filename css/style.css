@@ -205,6 +205,7 @@ ul.special_bullet li:before {
   float: right;
   border-radius: 50%;
   margin: 50px; 
+  right: 20px;
   }
 
 .line {
