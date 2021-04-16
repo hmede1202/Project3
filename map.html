@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBMlF-BpX660SBK3-Vw9O9f7AEvTAIH8rIicallback=initMap"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -25,6 +23,11 @@
   <script src="js/foundation.accordion.min.js"></script>
   <script>
     $(document).foundation();
+  </script>
+    <script>
+    $(document).ready(function(){
+      $('.slides').bxSlider();
+    });
   </script>
 </head>
 <body>
@@ -43,28 +46,12 @@
     </nav>
   </header>
   <div id="map"></div>
+  <section>
   <div class="wrapper">
     <div id="canvas"></div>
   </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/style.css">	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.slides').bxSlider();
-    });
-  </script>
-</head>
-<body>
+  </section>
+  <section>
   <div class="wrapper_bx">
     <ul class="slides">
       </li> 
@@ -96,6 +83,10 @@
 
       });
     </script>  
-  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </section>
 </body>
 </html>
+
+
