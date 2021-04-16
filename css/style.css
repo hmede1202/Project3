@@ -300,7 +300,9 @@ ul.special_bullet li:before {
   background-size: cover;
   background-position: center center;
   text-align: center;
-
+  float: left;
+  display: table;   
+  margin: 0 auto;
   }
 
 .slides li h2{
