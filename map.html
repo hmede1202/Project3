@@ -7,6 +7,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBMlF-BpX660SBK3-Vw9O9f7AEvTAIH8rIicallback=initMap"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script async src="js/script.js"></script>
@@ -42,7 +46,99 @@
   <div class="wrapper">
     <div id="canvas"></div>
   </div>
+  <section>
+    <script>
+    $(document).ready(function(){
+      $('.slides').bxSlider();
+    });
+  </script>
+  <div class="wrapper_bx">
+    <ul class="slides">
+      <li><img src="images/Bangkok_Temple.jpg" title="Bangkok" />
+        <h2 class="footer">Bangkok Temple</h2>
+      </li> 
+      <li><img src="images/Eiffel_Tower.jpg" title="Paris in the Springtime" />
+        <h2 class="footer">Paris in the Springtime</h2>
+      </li>
+      <li><img src="images/Great Pyramids.jpg" title="Great Pyramids of Egypt" />
+        <h2 class="footer">Great Pyramids of Egypt</h2>
+      </li>
+      <li>><img src="images/Sydney_Australia.jpg" title="Sydney Opera House" />
+        <h2 class="footer">Sydney Opera House</h2>    
+      </li>
+      <li>><img src="images/Taj_Mahal.jpg" title="The Taj Mahal" />
+        <h2 class="footer">The Taj Mahal</h2>    
+      </li>
+      <li>><img src="images/London_Bridge.jpg" title= "London Bridge"  />
+        <h2 class="footer">London Bridge</h2>    
+      </li>
+      <li>><img src="images/Great_Wall.jpg" title= "The Great Wall"  />
+        <h2 class="footer">Always Going on An Adventure... When there's no pandemic</h2> 
+      </li> 
+    </ul> 
+  <div>
+    <script>
+      var slSlider = $('.wrapper_bx').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
+
+      });
+    </script>  
+  </div>
+  </section>
 </body>
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slides').bxSlider();
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper_bx">
+    <ul class="slides">
+      <li><img src="images/Bangkok_Temple.jpg" title="Bangkok" />
+        <h2 class="footer">Bangkok Temple</h2>
+      </li> 
+      <li><img src="images/Eiffel_Tower.jpg" title="Paris in the Springtime" />
+        <h2 class="footer">Paris in the Springtime</h2>
+      </li>
+      <li><img src="images/Great Pyramids.jpg" title="Great Pyramids of Egypt" />
+        <h2 class="footer">Great Pyramids of Egypt</h2>
+      </li>
+      <li>><img src="images/Sydney_Australia.jpg" title="Sydney Opera House" />
+        <h2 class="footer">Sydney Opera House</h2>    
+      </li>
+      <li>><img src="images/Taj_Mahal.jpg" title="The Taj Mahal" />
+        <h2 class="footer">The Taj Mahal</h2>    
+      </li>
+      <li>><img src="images/London_Bridge.jpg" title= "London Bridge"  />
+        <h2 class="footer">London Bridge</h2>    
+      </li>
+      <li>><img src="images/Great_Wall.jpg" title= "The Great Wall"  />
+        <h2 class="footer">Always Going on An Adventure... When there's no pandemic</h2> 
+      </li> 
+    </ul> 
+  <div>
+    <script>
+      var slSlider = $('.wrapper_bx').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
+
+      });
+    </script>  
+  </div>
+</body>
+</html>
