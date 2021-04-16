@@ -282,12 +282,19 @@ ul.special_bullet li:before {
   border: none;
   }
 
-  
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: San Serif;
+}
   
 .slides li{
   height: 100vh;
-  text-align: center;
+  width: 800vh:
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
