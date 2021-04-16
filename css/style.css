@@ -274,7 +274,7 @@ ul.special_bullet li:before {
 .wrapper_bx {
   width 1000px
   margin: 40px auto;
-  padding:
+  text-align: center;
   }
 
 .bx-wrapper {
@@ -299,6 +299,8 @@ ul.special_bullet li:before {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
+  text-align: center;
+
   }
 
 .slides li h2{
