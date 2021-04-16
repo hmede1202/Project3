@@ -283,11 +283,7 @@ ul.special_bullet li:before {
   }
 
   
-.slides {
-  width: 500px;
-  margin: 40px auto; 
-  text-align: center;
-  }
+
   
 .slides li{
   height: 100vh;
@@ -297,15 +293,16 @@ ul.special_bullet li:before {
   background-position: center center;
   }
 
-.wrapper_bx li h2{
+.slides li h2{
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -35%);
-  font-family: Audiowide;
-  font-size: 60px;
+  font-family: San Serif;
+  font-size: 45px;
   margin: 0;
   padding: 0;
+  text-align: bottom;
   }
   
   
