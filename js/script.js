@@ -1,14 +1,14 @@
-function init(){
+function initMap(){
   alert('It Works!');
   
   var el = document.getElementById('canvas');
   var myLocation = new google.maps.LatLng(48.85853948884557, 2.294497391554784);
   var mapOptions = {
     center: myLocation,
-    zoom: 3,
+    zoom: 18,
     mapTypeId: google.maps.MapTypeId.HYBRID,
     mapTypeControlOptions: {
-      position: google.maps.ControlPosition.BOTTOM_CENTER
+    position: google.maps.ControlPosition.BOTTOM_CENTER
     }
   };
   
@@ -37,7 +37,6 @@ function init(){
 	
 google.maps.event.addDomListener(window, 'load', init);
 
-//Do you know why this code doesn't work also? I wanted to use this instead of the one I have on the html
 
 
 
