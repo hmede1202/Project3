@@ -1,3 +1,16 @@
+    $(document).ready(function(){
+      $('.slides').bxSlider();
+    });
+    
+    var slSlider = $('.wrapper_bx').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
+     	 }
+    });
+      
+
+
 function initMap(){
   alert('It Works!');
   
@@ -41,4 +54,4 @@ google.maps.event.addDomListener(window, 'load', init);
 
 
 
-/// ALSO CSS VALIDATION ERRORS. WHY IS IT CAUSING ERRORS, IF I"VE NEVER CHANGED IT. LEAVE IT IN OR NOT???
+/// ALSO CSS NORMALIZATION FILE ERRORS. WHY IS IT CAUSING ERRORS, IF I"VE NEVER CHANGED IT. LEAVE IT IN OR NOT???
