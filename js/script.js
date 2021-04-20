@@ -10,7 +10,6 @@
     });
       
 
-
 function initMap(){
   alert('It Works!');
   
