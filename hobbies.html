@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
     <script async src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl7-DnGlElcaXlOTn_9bPcSbZ1Q2Ypqso&callback=initMap"
+    type="text/javascript"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
@@ -18,14 +21,6 @@
     <script src="js/foundation.util.mediaQuery.min.js"></script>
     <script src="js/foundation.tabs.min.js"></script>
     <script src="js/foundation.accordion.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.slides').bxSlider();
-      });
-    </script>
-    <script>
-      $(document).foundation();
-    </script>
   <title>My Hobbies</title>
 </head>
   <body>    
@@ -114,15 +109,6 @@
       </li> 
     </ul> 
   </div>
-    <script>
-      var slSlider = $('.wrapper_bx').bxSlider({
-        auto: true,
-          onSlideAfter: function(){
-            slSlider.startAuto();
-      });
-    </script>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </section>
   </body>
 </html>
