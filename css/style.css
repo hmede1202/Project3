@@ -272,11 +272,10 @@ ul.special_bullet li:before {
   } 
   
 .wrapper_bx {
-  background-color: #dde3ed;
-  width 95%;
+  width: 850px;
+  height: 600px;
+  background-color: rgb(7, 83, 159); 
   margin: 0px auto;
-  padding-left: 3%;
-  padding-right: 
   }
 
 .bx-wrapper {
@@ -287,10 +286,9 @@ ul.special_bullet li:before {
 
 .footer {
   position: absolute;
-  top: 20%;
-  left: 16%;
-  transform: translate (-50%, -35%);
-  font-size: 45px;
+  top: 5%;
+  left: 12%;
+  font-size: 40px;
   font-family: arial;
   margin: 0;
   padding:0;
@@ -299,10 +297,9 @@ ul.special_bullet li:before {
 
 .footer1 {
   position: absolute;
-  top: 20%;
-  left: 0%;
-  transform: translate (-50%, -35%);
-  font-size: 45px;
+  top: 25%;
+  left: 5%;
+  font-size: 40px;
   font-family: arial;
   margin: 0;
   padding:0;
@@ -311,10 +308,10 @@ ul.special_bullet li:before {
   
 .footer2{
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 50%;
   transform: translate (-50%, -35%);
-  font-size: 45px;
+  font-size: 36px;
   font-family: arial;
   margin: 0;
   padding:0;
@@ -326,28 +323,35 @@ ul.special_bullet li:before {
 }
 
 .slides img {
-  margin: 0 auto;
+  width: 700px;
+  height: 500px;  
+  margin: 0px auto; 
   max-width: 100%;
   overflow: hidden;
   vertical-align: middile;
+  background-color: rgb(7, 83, 159);
 }
 
 
 .slides li h2{
+  width: 700px;
+  height: 500px;
   overflow: hidden;
   top: 5%;
   color: #dde3ed;
   font-family: arial;
-  font-size: 45px;
-  text-align: center;
+  font-size: 30px;
+  text-align: left;
   }
   
 .slides li h1{
+  width: 700px;
+  height: 500px;
   overflow: hidden;
   top: 5%;
   color: #082557;
   font-family: arial;
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   }
   
@@ -355,7 +359,7 @@ ul.special_bullet li:before {
 #canvas {
   width: 700px;
   height: 500px;  
-  margin: 30px auto; 
+  margin: 40px auto; 
   }
   
   
