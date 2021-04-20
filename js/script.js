@@ -1,14 +1,16 @@
-  $(document).ready(function(){
-    $('.slides').bxSlider();
-  });
+    $(document).ready(function(){
+      $('.slides').bxSlider();
+    });
     
-  var slSlider = $('.wrapper_bx').bxSlider({
-    auto: true,
-        onSlideAfter: function(){
-        slSlider.startAuto();
-     	}
+    var slSlider = $('.wrapper_bx').bxSlider({
+        auto: true,
+          onSlideAfter: function(){
+            slSlider.startAuto();
+     	 }
     });
       
+
+
 function initMap(){
   alert('It Works!');
   
